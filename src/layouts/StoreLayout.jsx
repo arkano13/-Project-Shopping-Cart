@@ -1,11 +1,11 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
-import Navbar from "../components/Navbar/Navbar";
+import Navbar from "../components/Navbar/NavBar";
 import Footer from "../components/Footer/Footer";   
 import UseFetchProducts from "../hooks/UseFetchProducts";
 import { FavProvider } from "./favContext";
 import { CartProvider } from "./CartContext";
-import Fav from "../pages/Fav/fav";
+
 
 export default function StoreLayout() {
 const { products, loading, error } = UseFetchProducts();    
