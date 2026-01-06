@@ -2,7 +2,7 @@ import React from "react";
 import { Outlet } from "react-router-dom";
 import Navbar from "../components/Navbar/NavBar";
 import Footer from "../components/Footer/Footer";   
-import UseFetchProducts from "../hooks/UseFetchProducts";
+import UseFetchProducts from "../hooks/useFetchProducts";
 import { FavProvider } from "./favContext";
 import { CartProvider } from "./CartContext";
 
