@@ -1,5 +1,5 @@
 import { Link, NavLink } from "react-router-dom";
-import styles from "./NavBar.module.css";
+import styles from "./Navbar.module.css";
 import Logo from "../../assets/img/logo.png";
 import { FaCartShopping } from "react-icons/fa6";
 import { MdOutlineFavorite } from "react-icons/md";
