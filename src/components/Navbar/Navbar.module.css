@@ -1,0 +1,46 @@
+.topBar{
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  margin: 10px 70px 10px 70px;
+}
+
+.Logo{
+  height: 150px;
+}
+
+.icons{
+    margin:10px;
+    font-size: 26px;
+    color:inherit;
+}
+
+.menuBar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  font-family: 'Oswald', sans-serif;
+
+} 
+
+.menuLinks{
+  color: var(--gloves);
+  transition: color 0.3s ease-in-out, transform 0.3s ease-in-out; 
+}
+
+.menuLinks:hover{
+    color: white;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.active{
+  color: white;
+} 
+

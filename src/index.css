@@ -1,0 +1,71 @@
+@font-face {
+  font-family: "Inter";
+  src: url("../src/assets/fonts/Inter-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../src/assets/fonts/Inter-Regular.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../src/assets/fonts/Inter-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../src/assets/fonts/Inter-ExtraBold.woff2") format("woff2");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
+
+:root {
+--bg-main: #0b0f19;        /* fondo general de la página */
+--bg-secondary: #121826;  /* cards, secciones */
+--bg-tertiary: #1a2236;   /* hover, elementos elevados */
+--text-primary: #f1f5f9;   /* texto principal */
+--text-secondary: #cbd5e1;/* subtítulos */
+--text-muted: #94a3b8;    /* texto menos importante */
+--primary: #22c55e;        /* botones, acciones principales */
+--primary-hover: #16a34a;
+--success: #4ade80;
+--warning: #facc15;
+--error: #ef4444;
+--gloves: #F5C46A;;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+     font-family: "Oswald", sans-serif;
+  background-color: var(--bg-main);
+  color: var(--text-primary);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}

@@ -1,0 +1,36 @@
+.announcement {
+  background-color: var(--gloves);
+  height: 50px;
+  color: var(--bg-main);
+  overflow: hidden;   /* recorta todo lo que sobresalga */
+  white-space: nowrap; 
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  padding: 10px 0;
+  font-family: "Oswald", sans-serif;
+  font-weight: 800;
+  font-size: larger;
+
+  text-transform: uppercase;
+}
+
+.ticker {
+  display: inline-block;
+  animation: scroll 70s linear infinite;
+}
+
+.message {
+
+  display: inline-block;
+  margin-right: 50px; /* espacio entre mensajes */
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(25%); /* empieza fuera de la pantalla a la derecha */
+  }
+  100% {
+    transform: translateX(-100%); /* termina fuera de la pantalla a la izquierda */
+  }
+}

@@ -1,0 +1,112 @@
+/* Contenedor de la card */
+.cellsContainer {
+    display: flex;
+flex-direction: row;
+flex-wrap:wrap ;
+  gap: 16px;
+  padding: 16px;
+  justify-items: center; /* centra las cards en sus celdas */
+} 
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color:var(--gloves);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+}
+
+/* Botón favorito */
+.favBtn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.6);
+  border: none;
+  border-radius: 50%;
+  padding: 8px;
+  cursor: pointer;
+  color: white;
+  font-size: 16px;
+  transition: background 0.2s ease;
+}
+
+.favBtn:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+/* Imagen del producto */
+.imageWrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 4 / 5; /* proporción de la imagen */
+  overflow: hidden;
+}
+
+.imageWrapper img {
+  width: 70%;
+  height: 70%;
+
+  transition: transform 0.3s ease;
+}
+
+.card:hover .imageWrapper img {
+  transform: scale(1.05); 
+}
+
+.cardContent {
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+  gap: 6px;
+  flex-grow: 1; /* permite que el botón principal quede abajo */
+}
+
+.title {
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.3;
+  color: var(--bg-main);
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Precio */
+.price {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--bg-main);
+}
+
+.actionBtn {
+  margin-top: auto; 
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: var(--bg-main);
+  color: white;
+  font-weight: 600;
+  transition: background 0.2s ease;
+}
+
+.actionBtn:hover {
+  background-color: #94a3b8;
+}
+.card {
+  max-width: 220px; /* o 250px, ajusta al gusto */
+  width: 100%;       /* para que sea responsive dentro del grid */
+  margin: 10px auto; /* centra un poco si quieres */
+}
