@@ -1,6 +1,6 @@
 import { useFav } from "../../layouts/favContext";
 import Cells from "../../components/Cells/Cells";
-import styles from "./Fav.module.css"; // Creamos estilos específicos para esta página
+import styles from "./fav.module.css"; // Creamos estilos específicos para esta página
 
 export default function Fav() {
   const { fav } = useFav();
